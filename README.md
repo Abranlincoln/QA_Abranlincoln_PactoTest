@@ -1,10 +1,10 @@
-# 🚀 Desafio Técnico QA - Pacto Soluções
+# Desafio Técnico QA - Pacto Soluções
 
 Este repositório contém a automação de testes para o processo seletivo da **Pacto Soluções**. O projeto foi desenvolvido utilizando **Cypress** e **Playwright**, demonstrando versatilidade na escolha de ferramentas para diferentes cenários de automação.
 
 ---
 
-## 📋 Atividades Realizadas
+## Atividades Realizadas
 
 ### 1. Questão 01: Busca Yahoo (Playwright)
 * **Cenário**: Realizar uma busca por "Pacto Soluções" no Yahoo Search e validar se o site oficial aparece nos resultados.
@@ -22,7 +22,7 @@ Este repositório contém a automação de testes para o processo seletivo da **
 
 ---
 
-## 🛠️ Tecnologias e Dependências
+## Tecnologias e Dependências
 
 * **Node.js** (Ambiente de execução)
 * **Yarn** (Gerenciador de pacotes)
@@ -31,34 +31,36 @@ Este repositório contém a automação de testes para o processo seletivo da **
 
 ---
 
-## 🚀 Como Executar o Projeto
+## Como Executar o Projeto
 
 ### 1. Instalação
 Clone o repositório e instale as dependências:
 ```bash
 yarn install
-2. Executando via Interface Visual (IDE)
+```
+### 2. Executando via Interface Visual (IDE)
 Para acompanhar a execução dos robôs passo a passo:
-
-Questão 2 (Cypress):
-
-Bash
-
-yarn cy:open
 Questão 1 (Playwright):
-
-Bash
+```bash
 
 yarn pw:ui
+```
+Questão 2 (Cypress):
+```bash
+
+yarn cy:open
+```
 3. Executando via Terminal (Modo Headless)
 Para uma execução rápida com geração de evidências:
 
-Bash
+```bash
 
 yarn cy:run    # Executa apenas Cypress
 yarn pw:test   # Executa apenas Playwright
 yarn test:all  # Executa ambos em sequência
-📸 Evidências de Teste
+
+```
+Evidências de Teste
 Após a execução via terminal, as imagens de evidência estarão disponíveis em:
 
 UOL (Cypress): cypress/screenshots/evidencia-data-uol.png
