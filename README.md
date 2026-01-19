@@ -16,7 +16,6 @@ Este repositório contém a automação de testes para o processo seletivo da **
 * **Ferramenta**: Cypress.
 * **Destaques Técnicos**:
     * Tratamento de exceções globais com `uncaught:exception`.
-    * Navegação entre diferentes domínios utilizando `cy.origin()`.
     * Uso de `removeAttr` para evitar que o navegador abra novas abas e perca o contexto do teste.
     * Geração de print de evidência (`evidencia-data-uol.png`) com foco na data encontrada.
 
