@@ -25,8 +25,9 @@ Este repositório contém a automação de testes para o processo seletivo da **
 
 * **Node.js** (Ambiente de execução)
 * **Yarn** (Gerenciador de pacotes)
-* **Cypress** (Automação E2E - Questão 2)
 * **Playwright** (Automação E2E - Questão 1)
+* **Cypress** (Automação E2E - Questão 2)
+
 
 ---
 
