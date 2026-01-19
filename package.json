@@ -18,6 +18,7 @@
   "homepage": "https://github.com/Abranlincoln/QA_Abranlincoln_PactoTest#readme",
   "devDependencies": {
     "@playwright/test": "^1.57.0",
-    "@types/node": "^25.0.9"
+    "@types/node": "^25.0.9",
+    "cypress": "^15.9.0"
   }
 }
