@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "pw:test": "npx playwright test"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Abranlincoln/QA_Abranlincoln_PactoTest.git"
@@ -20,5 +24,8 @@
     "@playwright/test": "^1.57.0",
     "@types/node": "^25.0.9",
     "cypress": "^15.9.0"
+  },
+  "dependencies": {
+    "jest": "^30.2.0"
   }
 }
