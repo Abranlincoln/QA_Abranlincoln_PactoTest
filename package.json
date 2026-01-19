@@ -1,31 +1,25 @@
 {
   "name": "qa_abranlincoln_pactotest",
   "version": "1.0.0",
-  "description": "",
+  "description": "Desafio Técnico QA - Pacto Soluções",
   "main": "index.js",
   "scripts": {
     "cy:open": "cypress open",
     "cy:run": "cypress run",
-    "pw:test": "npx playwright test"
+    "pw:test": "playwright test",
+    "pw:ui": "playwright test --ui",
+    "pw:report": "playwright show-report",
+    "test:all": "yarn cy:run && yarn pw:test"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Abranlincoln/QA_Abranlincoln_PactoTest.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/Abranlincoln/QA_Abranlincoln_PactoTest/issues"
-  },
-  "homepage": "https://github.com/Abranlincoln/QA_Abranlincoln_PactoTest#readme",
   "devDependencies": {
-    "@playwright/test": "^1.57.0",
-    "@types/node": "^25.0.9",
-    "cypress": "^15.9.0"
+    "@playwright/test": "^1.41.0",
+    "@types/node": "^20.0.0",
+    "cypress": "^13.6.0"
   },
-  "dependencies": {
-    "jest": "^30.2.0"
-  }
+  "license": "ISC",
+  "type": "commonjs"
 }

@@ -16,6 +16,7 @@ describe('Atividade 2 - UOL', () => {
         .then((texto) => {
           const data = texto.replace('Atualização:', '').trim();
           cy.log('DATA ENCONTRADA: ' + data);
+          cy.screenshot('evidencia-data-uol');
         });
     });
   });
