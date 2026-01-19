@@ -9,7 +9,7 @@
     "pw:test": "playwright test",
     "pw:ui": "playwright test --ui",
     "pw:report": "playwright show-report",
-    "test:all": "yarn cy:run && yarn pw:test"
+    "test:all": "yarn pw:test && yarn cy:run"
   },
   "repository": {
     "type": "git",

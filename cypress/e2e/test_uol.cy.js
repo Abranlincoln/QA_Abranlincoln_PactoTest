@@ -5,19 +5,18 @@ describe('Atividade 2 - UOL', () => {
     cy.visit('https://www.uol.com.br');
 
     cy.contains('a', /segurança e privacidade/i)
+      .scrollIntoView()
       .invoke('removeAttr', 'target')
       .click({ force: true });
 
-    cy.origin('https://sobreuol.noticias.uol.com.br', () => {
-      cy.contains('Atualização:', { timeout: 30000 })
-        .should('be.visible')
-        .parent()
-        .invoke('text')
-        .then((texto) => {
-          const data = texto.replace('Atualização:', '').trim();
-          cy.log('DATA ENCONTRADA: ' + data);
-          cy.screenshot('evidencia-data-uol');
-        });
-    });
+    cy.contains('strong', /Atualização/i, { timeout: 30000 })
+      .scrollIntoView()
+      .should('be.visible')
+      .parent()
+      .then(($el) => {
+        const data = $el.text().replace(/Atualização:?/i, '').trim();
+        cy.log('DATA ENCONTRADA: ' + data);
+        cy.wrap($el).screenshot('data-atualização-completa');
+      });
   });
 });
